@@ -5,21 +5,21 @@
 class Gosh < Formula
   desc "CLI to list and access cloud instances"
   homepage "https://github.com/yogin/gosh"
-  version "2.0.4"
+  version "2.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yogin/gosh/releases/download/v2.0.4/gosh_Darwin_arm64.tar.gz"
-      sha256 "0f0bc6b2bfc026c1cd930d7ffcd99ee1a510453f9acba91f5ea01cfd2f317aa1"
+      url "https://github.com/yogin/gosh/releases/download/v2.0.5/gosh_Darwin_arm64.tar.gz"
+      sha256 "6cecd386e0f09ca7244977fcce6801b67e7269d40d68de842ad5bc6adc4cdc98"
 
       def install
         bin.install "gosh"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yogin/gosh/releases/download/v2.0.4/gosh_Darwin_x86_64.tar.gz"
-      sha256 "efb1de36fced1b2a5dec4964a073744888dcfd072a9acb3ef4a44b299117e619"
+      url "https://github.com/yogin/gosh/releases/download/v2.0.5/gosh_Darwin_x86_64.tar.gz"
+      sha256 "a5c5240782b23db7a8e94f0c9b6f6a72d62f8cf7db12bf5d14baecae449d9eb9"
 
       def install
         bin.install "gosh"
@@ -29,16 +29,16 @@ class Gosh < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yogin/gosh/releases/download/v2.0.4/gosh_Linux_arm64.tar.gz"
-      sha256 "aabb4a4f7c7c5cea9693ecc47a5f7f48fb91479b0b869dcb8063cfb0de9ffb7d"
+      url "https://github.com/yogin/gosh/releases/download/v2.0.5/gosh_Linux_arm64.tar.gz"
+      sha256 "7d99391d583254746cc2007bfb41ad2ae03686a1ee1dd3c8d822d5124a2a02c9"
 
       def install
         bin.install "gosh"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yogin/gosh/releases/download/v2.0.4/gosh_Linux_x86_64.tar.gz"
-      sha256 "8e90b7fc8c82d6fa06cb38cdf7b9e989fd20bc94189f07d34b40898b3306911a"
+      url "https://github.com/yogin/gosh/releases/download/v2.0.5/gosh_Linux_x86_64.tar.gz"
+      sha256 "5c73b07924e3dd2184af6354deb2df3a37262a0dee0f97bec5c279ca40ae1726"
 
       def install
         bin.install "gosh"
